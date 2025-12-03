@@ -35,17 +35,26 @@
 
     /* HERO SECTION */
     .hero {
-    background: url('https://images.unsplash.com/photo-1505848313478-0c3a5d7e23b4') center/cover no-repeat;
     height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     color: white;
-    background-blend-mode: multiply;
-    background-color: rgba(0, 43, 92, 0.5); /* blue tint */
     padding: 20px;
+
+    /* MULTI-LAYERED BACKGROUND (flag + sky + overlay) */
+    background:
+        linear-gradient(
+            rgba(0, 43, 92, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url('https://images.unsplash.com/photo-1503264116251-35a269479413') center/cover no-repeat,
+        url('https://upload.wikimedia.org/wikipedia/commons/0/0c/Flag_of_Israel.svg') center/contain no-repeat;
+
+    background-blend-mode: overlay, multiply, normal;
 }
+
     .hero h1 {
         font-size: 3rem;
         margin: 0 0 10px;
