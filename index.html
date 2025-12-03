@@ -1,64 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Israel First Party</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#222; }
-    header { background:#0055A5; color:white; padding:20px; text-align:center; }
-    nav a { color:white; margin:0 10px; text-decoration:none; font-weight:bold; }
-    section { padding:40px 20px; max-width:900px; margin:0 auto; }
-    h1,h2,h3 { color:#0055A5; }
-    .button { background:#0055A5; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; }
-    footer { text-align:center; padding:20px; background:#222; color:white; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Israel First Party – Putting Israelis First</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+        color: #1a1a1a;
+        line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    header {
+        background: #002b5c;
+        padding: 15px 40px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    header nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        background: url('https://upload.wikimedia.org/wikipedia/commons/0/0c/Flag_of_Israel.svg') center/cover no-repeat;
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+    }
+    .hero h1 {
+        font-size: 3rem;
+        margin: 0 0 10px;
+        font-weight: bold;
+    }
+    .hero h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+    .hero .cta-buttons a {
+        background: #ffc107;
+        padding: 12px 25px;
+        margin: 5px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    /* SECTIONS */
+    section {
+        padding: 60px 40px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #002b5c;
+        text-align: center;
+    }
+
+    /* PLATFORM GRID */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 25px;
+        margin-top: 30px;
+    }
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+        color: #002b5c;
+        margin-top: 0;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #002b5c;
+        color: white;
+        padding: 20px 40px;
+        text-align: center;
+        margin-top: 40px;
+    }
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>Israel First Party</h1>
+
+<!-- NAVBAR -->
+<header>
+    <div style="font-size: 1.3rem; font-weight: bold;">Israel First Party</div>
     <nav>
-      <a href="#about">About</a>
-      <a href="#platform">Platform</a>
-      <a href="#news">News</a>
-      <a href="#get-involved">Get Involved</a>
-      <a href="#donate">Donate</a>
+        <a href="#about">About</a>
+        <a href="#platform">Platform</a>
+        <a href="#news">News</a>
+        <a href="#join">Join</a>
     </nav>
-  </header>
+</header>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We fight for practical change: housing, healthcare, jobs, and a safer future. Join us.</p>
-  </section>
-
-  <section id="platform">
-    <h2>Platform & Issues</h2>
-    <ul>
-      <li><strong>Housing:</strong> Affordable homes and stable mortgages.</li>
-      <li><strong>Healthcare:</strong> Universal access and stronger hospitals.</li>
-      <li><strong>Jobs & Economy:</strong> Support for small business and green jobs.</li>
-    </ul>
-  </section>
-
-  <section id="news">
-    <h2>Latest News</h2>
-    <p>Check back here for updates and press releases.</p>
-  </section>
-
-  <section id="get-involved">
-    <h2>Get Involved</h2>
-    <p>Volunteer, organize, and help spread the word.</p>
-    <a href="#" class="button">Sign Up to Help</a>
-  </section>
-
-  <section id="donate">
-    <h2>Donate</h2>
-    <p>Support our work. (Integrate with a payment processor in production.)</p>
-    <a href="#" class="button">Donate Now</a>
-  </section>
-
-  <footer>
-    <p>© 2025 Israel First Party. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+<!-- HERO -->
+<div class="hero">
+    <h1>Israel First Party</h1>
+    <h2>Putting Israelis First</h2>
+    <div class=
