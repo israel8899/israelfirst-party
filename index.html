@@ -43,18 +43,13 @@
     color: white;
     padding: 20px;
 
-    /* MULTI-LAYERED BACKGROUND (flag + sky + overlay) */
     background:
-        linear-gradient(
-            rgba(0, 43, 92, 0.55),
-            rgba(0, 0, 0, 0.55)
-        ),
-        url('https://images.unsplash.com/photo-1503264116251-35a269479413') center/cover no-repeat,
-        url('https://upload.wikimedia.org/wikipedia/commons/0/0c/Flag_of_Israel.svg') center/contain no-repeat;
+        linear-gradient(rgba(0, 43, 92, 0.45), rgba(0, 0, 0, 0.55)),
+        url('https://upload.wikimedia.org/wikipedia/commons/f/fc/Israel_flag_Waving_2011.jpg') center/cover no-repeat,
+        url('https://images.unsplash.com/photo-1503264116251-35a269479413') center/cover no-repeat;
 
-    background-blend-mode: overlay, multiply, normal;
+    background-blend-mode: multiply, lighten, normal;
 }
-
     .hero h1 {
         font-size: 3rem;
         margin: 0 0 10px;
